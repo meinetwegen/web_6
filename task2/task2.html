@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 · The party in motion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top">
+        <a href="../index.html" class="back">&larr; Back</a>
+        <h1>Task 2. The party in motion</h1>
+        <p>Click a case for a spotlight. Click a guest to open their card (Esc or a click outside closes it).
+           Move guests between rooms and sort rooms by arrival time.</p>
+    </header>
+
+    <main class="layout">
+        <div class="left">
+            <div class="house">
+                <div class="roof"><span class="sign">The Party, 19:30 – 22:30</span></div>
+
+                <div id="floors"></div>
+
+                <div class="ground"></div>
+                <div class="legend">
+                    <span class="dots">
+                        <i class="dot red"></i><i class="dot blue"></i><i class="dot green"></i>
+                        <i class="dot black"></i><i class="dot yellow"></i><i class="dot purple"></i>
+                    </span> Clothing color
+                    <span>📱 Phone</span>
+                    <span>👓 Glasses</span>
+                    <span>👜 Bag</span>
+                    <span>☕ Cup</span>
+                    <span>🍰 Cake crumbs</span>
+                    <span>🕒 Arrival time</span>
+                    <span><i class="badge-mini">🎓</i> AITU student</span>
+                </div>
+            </div>
+
+            <h2 class="cases-title">Cases</h2>
+            <div id="cases" class="cases"></div>
+        </div>
+
+        <aside class="panel">
+            <div id="result" class="result">
+                <div class="result-title">Detective notes</div>
+                <div class="result-names">Click a case to start the investigation.</div>
+            </div>
+            <button id="clear" class="clear">Clear</button>
+        </aside>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="task2.js"></script>
+</body>
+</html>
